@@ -13,6 +13,15 @@
 		5C24C06B2CFF839C009F2886 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C24C06A2CFF839C009F2886 /* Preview Assets.xcassets */; };
 		5C24C06D2CFF839C009F2886 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C06C2CFF839C009F2886 /* Persistence.swift */; };
 		5C24C0702CFF839C009F2886 /* TawuniyaTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C06E2CFF839C009F2886 /* TawuniyaTask.xcdatamodeld */; };
+		5C24C0792CFF882C009F2886 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0782CFF882C009F2886 /* RequestBuilder.swift */; };
+		5C24C07D2CFF889F009F2886 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C07C2CFF889F009F2886 /* HTTPMethod.swift */; };
+		5C24C0802CFF89CB009F2886 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C07F2CFF89CB009F2886 /* APIRouter.swift */; };
+		5C24C0822CFF8B4C009F2886 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0812CFF8B4C009F2886 /* NetworkServices.swift */; };
+		5C24C0842CFF8BF6009F2886 /* URLSessionNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0832CFF8BF6009F2886 /* URLSessionNetworkLayer.swift */; };
+		5C24C0862CFF901B009F2886 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0852CFF901B009F2886 /* User.swift */; };
+		5C24C0882CFF904A009F2886 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0872CFF904A009F2886 /* Address.swift */; };
+		5C24C08A2CFF906A009F2886 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0892CFF906A009F2886 /* Geo.swift */; };
+		5C24C08C2CFF9083009F2886 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C08B2CFF9083009F2886 /* Company.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,15 @@
 		5C24C06A2CFF839C009F2886 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C24C06C2CFF839C009F2886 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		5C24C06F2CFF839C009F2886 /* TawuniyaTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TawuniyaTask.xcdatamodel; sourceTree = "<group>"; };
+		5C24C0782CFF882C009F2886 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		5C24C07C2CFF889F009F2886 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		5C24C07F2CFF89CB009F2886 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		5C24C0812CFF8B4C009F2886 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		5C24C0832CFF8BF6009F2886 /* URLSessionNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkLayer.swift; sourceTree = "<group>"; };
+		5C24C0852CFF901B009F2886 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5C24C0872CFF904A009F2886 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		5C24C0892CFF906A009F2886 /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
+		5C24C08B2CFF9083009F2886 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +73,8 @@
 		5C24C0622CFF839A009F2886 /* TawuniyaTask */ = {
 			isa = PBXGroup;
 			children = (
+				5C24C07A2CFF8868009F2886 /* Models */,
+				5C24C0762CFF87FA009F2886 /* NetworkServices */,
 				5C24C0632CFF839A009F2886 /* TawuniyaTaskApp.swift */,
 				5C24C0652CFF839A009F2886 /* ContentView.swift */,
 				5C24C0672CFF839C009F2886 /* Assets.xcassets */,
@@ -71,6 +91,53 @@
 				5C24C06A2CFF839C009F2886 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5C24C0762CFF87FA009F2886 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C07E2CFF8963009F2886 /* Routers */,
+				5C24C0772CFF8808009F2886 /* Protocols */,
+				5C24C07B2CFF886E009F2886 /* Enums */,
+				5C24C0832CFF8BF6009F2886 /* URLSessionNetworkLayer.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		5C24C0772CFF8808009F2886 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0782CFF882C009F2886 /* RequestBuilder.swift */,
+				5C24C0812CFF8B4C009F2886 /* NetworkServices.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5C24C07A2CFF8868009F2886 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0852CFF901B009F2886 /* User.swift */,
+				5C24C0872CFF904A009F2886 /* Address.swift */,
+				5C24C0892CFF906A009F2886 /* Geo.swift */,
+				5C24C08B2CFF9083009F2886 /* Company.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C24C07B2CFF886E009F2886 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C07C2CFF889F009F2886 /* HTTPMethod.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		5C24C07E2CFF8963009F2886 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C07F2CFF89CB009F2886 /* APIRouter.swift */,
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +210,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C24C0802CFF89CB009F2886 /* APIRouter.swift in Sources */,
+				5C24C0842CFF8BF6009F2886 /* URLSessionNetworkLayer.swift in Sources */,
+				5C24C0862CFF901B009F2886 /* User.swift in Sources */,
+				5C24C08A2CFF906A009F2886 /* Geo.swift in Sources */,
+				5C24C0792CFF882C009F2886 /* RequestBuilder.swift in Sources */,
 				5C24C06D2CFF839C009F2886 /* Persistence.swift in Sources */,
+				5C24C07D2CFF889F009F2886 /* HTTPMethod.swift in Sources */,
 				5C24C0662CFF839A009F2886 /* ContentView.swift in Sources */,
 				5C24C0702CFF839C009F2886 /* TawuniyaTask.xcdatamodeld in Sources */,
+				5C24C0882CFF904A009F2886 /* Address.swift in Sources */,
+				5C24C0822CFF8B4C009F2886 /* NetworkServices.swift in Sources */,
+				5C24C08C2CFF9083009F2886 /* Company.swift in Sources */,
 				5C24C0642CFF839A009F2886 /* TawuniyaTaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
