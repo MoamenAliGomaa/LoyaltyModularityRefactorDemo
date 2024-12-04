@@ -9,17 +9,6 @@ import Foundation
 import CoreData
 
 extension NSManagedObjectContext {
-    func saveAndResetIfNeeded() throws {
-        do {
-            if hasChanges {
-                try save()
-                reset()
-            }
-        } catch {
-           throw CoreDataError.saveFailed
-        }
-    }
-    
     func saveIfNeeded() throws {
         do {
             if hasChanges {

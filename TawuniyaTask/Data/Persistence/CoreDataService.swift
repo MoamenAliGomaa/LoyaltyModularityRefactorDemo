@@ -13,15 +13,13 @@ public class CoreDataService: LocalDataService {
 
     private let context: NSManagedObjectContext
 
-    // Initialize with the context (typically injected in the repository layer)
     public init(context: NSManagedObjectContext) {
         self.context = context
     }
 
-    // Save a managed object
     public func save(object: any ManagedObjectConvertible) throws {
         object.createManageObject(context: context)
-        try context.save()
+        try context.saveIfNeeded()
     }
 
     public func delete(_ model: NSManagedObject.Type, predicate: NSPredicate?) throws {

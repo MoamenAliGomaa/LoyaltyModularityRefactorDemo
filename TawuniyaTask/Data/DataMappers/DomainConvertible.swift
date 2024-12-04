@@ -11,9 +11,5 @@ import CoreData
 public protocol DomainConvertible {
     associatedtype Domain
 
-    /// Converts a conforming instance to a data model instance.
-    ///
-    /// - Returns: The converted data model instance.
-    @discardableResult
     func toDomain() -> Domain?
 }

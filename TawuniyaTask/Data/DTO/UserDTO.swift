@@ -6,7 +6,6 @@
 //
 
 import Foundation
-// MARK: - Models
 
 class UserDTO: Codable {
     let id: Int?
