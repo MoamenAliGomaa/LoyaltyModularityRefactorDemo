@@ -1,5 +1,5 @@
 //
-//  Geo.swift
+//  GeoDTO.swift
 //  TawuniyaTask
 //
 //  Created by moamen ali gomaa on 03/12/2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Geo: Codable {
+struct GeoDTO: Codable {
     let lat: String?
     let lng: String?
 }

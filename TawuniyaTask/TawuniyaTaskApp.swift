@@ -9,12 +9,25 @@ import SwiftUI
 
 @main
 struct TawuniyaTaskApp: App {
-    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            let context = CoreDataStack.shared.context
+            let localDataService = CoreDataService(context: context)
+            let networkLayer = URLSessionNetworkLayer()
+            let userRepository = UserRepository(
+                networkLayer: networkLayer,
+                localDataService: localDataService
+            )
+            let getAllUsersUseCase = GetAllUsersUseCase(repository: userRepository)
+            let saveUserUseCase = SaveUserUseCase(repository: userRepository)
+            let deleteUserUseCase = DeleteUserUseCase(repository: userRepository)
+            let viewModel = UserListViewModel(
+                fetchAllUsersUseCase: getAllUsersUseCase,
+                saveUserUseCase: saveUserUseCase,
+                deleteUserUseCase: deleteUserUseCase
+            )
+            UsersListView(viewModel: viewModel)
         }
     }
 }

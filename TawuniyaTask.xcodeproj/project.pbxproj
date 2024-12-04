@@ -8,39 +8,77 @@
 
 /* Begin PBXBuildFile section */
 		5C24C0642CFF839A009F2886 /* TawuniyaTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0632CFF839A009F2886 /* TawuniyaTaskApp.swift */; };
-		5C24C0662CFF839A009F2886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0652CFF839A009F2886 /* ContentView.swift */; };
 		5C24C0682CFF839C009F2886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C24C0672CFF839C009F2886 /* Assets.xcassets */; };
 		5C24C06B2CFF839C009F2886 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C24C06A2CFF839C009F2886 /* Preview Assets.xcassets */; };
-		5C24C06D2CFF839C009F2886 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C06C2CFF839C009F2886 /* Persistence.swift */; };
 		5C24C0702CFF839C009F2886 /* TawuniyaTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C06E2CFF839C009F2886 /* TawuniyaTask.xcdatamodeld */; };
 		5C24C0792CFF882C009F2886 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0782CFF882C009F2886 /* RequestBuilder.swift */; };
 		5C24C07D2CFF889F009F2886 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C07C2CFF889F009F2886 /* HTTPMethod.swift */; };
 		5C24C0802CFF89CB009F2886 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C07F2CFF89CB009F2886 /* APIRouter.swift */; };
 		5C24C0822CFF8B4C009F2886 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0812CFF8B4C009F2886 /* NetworkServices.swift */; };
 		5C24C0842CFF8BF6009F2886 /* URLSessionNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0832CFF8BF6009F2886 /* URLSessionNetworkLayer.swift */; };
-		5C24C0862CFF901B009F2886 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0852CFF901B009F2886 /* User.swift */; };
-		5C24C0882CFF904A009F2886 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0872CFF904A009F2886 /* Address.swift */; };
-		5C24C08A2CFF906A009F2886 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0892CFF906A009F2886 /* Geo.swift */; };
-		5C24C08C2CFF9083009F2886 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C08B2CFF9083009F2886 /* Company.swift */; };
+		5C24C0862CFF901B009F2886 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0852CFF901B009F2886 /* UserDTO.swift */; };
+		5C24C0882CFF904A009F2886 /* AddressDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0872CFF904A009F2886 /* AddressDTO.swift */; };
+		5C24C08A2CFF906A009F2886 /* GeoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0892CFF906A009F2886 /* GeoDTO.swift */; };
+		5C24C08C2CFF9083009F2886 /* CompanyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C08B2CFF9083009F2886 /* CompanyDTO.swift */; };
+		5C24C0912CFF9A25009F2886 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0902CFF9A25009F2886 /* User.swift */; };
+		5C24C0942CFFA12B009F2886 /* ManagedObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0932CFFA12B009F2886 /* ManagedObjectConvertible.swift */; };
+		5C24C0962CFFA175009F2886 /* DomainConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0952CFFA175009F2886 /* DomainConvertible.swift */; };
+		5C24C0992CFFA369009F2886 /* UserRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0982CFFA369009F2886 /* UserRepositories.swift */; };
+		5C24C09B2CFFA512009F2886 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C09A2CFFA512009F2886 /* UserRepositoryProtocol.swift */; };
+		5C24C0A62CFFAF18009F2886 /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0A52CFFAF18009F2886 /* NSManagedObjectContext.swift */; };
+		5C24C0A82CFFB260009F2886 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0A72CFFB260009F2886 /* CoreDataStack.swift */; };
+		5C24C0AB2CFFB2B6009F2886 /* CoreDataErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0AA2CFFB2B6009F2886 /* CoreDataErrors.swift */; };
+		5C24C0AD2CFFB523009F2886 /* LocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0AC2CFFB523009F2886 /* LocalDataService.swift */; };
+		5C24C0AF2CFFB762009F2886 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0AE2CFFB762009F2886 /* CoreDataService.swift */; };
+		5C24C0B32CFFC3A7009F2886 /* GetAllUsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0B22CFFC3A7009F2886 /* GetAllUsersUseCase.swift */; };
+		5C24C0B52CFFC833009F2886 /* SaveUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0B42CFFC833009F2886 /* SaveUserCase.swift */; };
+		5C24C0B72CFFC88A009F2886 /* DeleteUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0B62CFFC88A009F2886 /* DeleteUserUseCase.swift */; };
+		5C24C0BC2CFFC9CA009F2886 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0BB2CFFC9CA009F2886 /* UsersListViewModel.swift */; };
+		5C24C0BE2CFFCC0F009F2886 /* UserRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0BD2CFFCC0F009F2886 /* UserRowViewModel.swift */; };
+		5C24C0C02CFFCDA8009F2886 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0BF2CFFCDA8009F2886 /* UserRowView.swift */; };
+		5C24C0C22CFFCFD8009F2886 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0C12CFFCFD8009F2886 /* UsersListView.swift */; };
+		5C24C0C52CFFD8FD009F2886 /* UserMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0C32CFFD8FD009F2886 /* UserMO+CoreDataClass.swift */; };
+		5C24C0C62CFFD8FD009F2886 /* UserMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0C42CFFD8FD009F2886 /* UserMO+CoreDataProperties.swift */; };
+		5C24C0C82CFFE338009F2886 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0C72CFFE338009F2886 /* ViewState.swift */; };
+		5C24C0CA2CFFE4BA009F2886 /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24C0C92CFFE4BA009F2886 /* RowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C24C0602CFF839A009F2886 /* TawuniyaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TawuniyaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C24C0632CFF839A009F2886 /* TawuniyaTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TawuniyaTaskApp.swift; sourceTree = "<group>"; };
-		5C24C0652CFF839A009F2886 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C24C0672CFF839C009F2886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C24C06A2CFF839C009F2886 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5C24C06C2CFF839C009F2886 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		5C24C06F2CFF839C009F2886 /* TawuniyaTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TawuniyaTask.xcdatamodel; sourceTree = "<group>"; };
 		5C24C0782CFF882C009F2886 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		5C24C07C2CFF889F009F2886 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		5C24C07F2CFF89CB009F2886 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		5C24C0812CFF8B4C009F2886 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		5C24C0832CFF8BF6009F2886 /* URLSessionNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkLayer.swift; sourceTree = "<group>"; };
-		5C24C0852CFF901B009F2886 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		5C24C0872CFF904A009F2886 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		5C24C0892CFF906A009F2886 /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
-		5C24C08B2CFF9083009F2886 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		5C24C0852CFF901B009F2886 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		5C24C0872CFF904A009F2886 /* AddressDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDTO.swift; sourceTree = "<group>"; };
+		5C24C0892CFF906A009F2886 /* GeoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoDTO.swift; sourceTree = "<group>"; };
+		5C24C08B2CFF9083009F2886 /* CompanyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDTO.swift; sourceTree = "<group>"; };
+		5C24C0902CFF9A25009F2886 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5C24C0932CFFA12B009F2886 /* ManagedObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectConvertible.swift; sourceTree = "<group>"; };
+		5C24C0952CFFA175009F2886 /* DomainConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainConvertible.swift; sourceTree = "<group>"; };
+		5C24C0982CFFA369009F2886 /* UserRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositories.swift; sourceTree = "<group>"; };
+		5C24C09A2CFFA512009F2886 /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
+		5C24C0A52CFFAF18009F2886 /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
+		5C24C0A72CFFB260009F2886 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		5C24C0AA2CFFB2B6009F2886 /* CoreDataErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataErrors.swift; sourceTree = "<group>"; };
+		5C24C0AC2CFFB523009F2886 /* LocalDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataService.swift; sourceTree = "<group>"; };
+		5C24C0AE2CFFB762009F2886 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		5C24C0B22CFFC3A7009F2886 /* GetAllUsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllUsersUseCase.swift; sourceTree = "<group>"; };
+		5C24C0B42CFFC833009F2886 /* SaveUserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserCase.swift; sourceTree = "<group>"; };
+		5C24C0B62CFFC88A009F2886 /* DeleteUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserUseCase.swift; sourceTree = "<group>"; };
+		5C24C0BB2CFFC9CA009F2886 /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
+		5C24C0BD2CFFCC0F009F2886 /* UserRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowViewModel.swift; sourceTree = "<group>"; };
+		5C24C0BF2CFFCDA8009F2886 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		5C24C0C12CFFCFD8009F2886 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		5C24C0C32CFFD8FD009F2886 /* UserMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C24C0C42CFFD8FD009F2886 /* UserMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5C24C0C72CFFE338009F2886 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		5C24C0C92CFFE4BA009F2886 /* RowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +111,11 @@
 		5C24C0622CFF839A009F2886 /* TawuniyaTask */ = {
 			isa = PBXGroup;
 			children = (
-				5C24C07A2CFF8868009F2886 /* Models */,
-				5C24C0762CFF87FA009F2886 /* NetworkServices */,
+				5C24C0B82CFFC94D009F2886 /* Presentation */,
+				5C24C08E2CFF92A9009F2886 /* Domain */,
+				5C24C07A2CFF8868009F2886 /* Data */,
 				5C24C0632CFF839A009F2886 /* TawuniyaTaskApp.swift */,
-				5C24C0652CFF839A009F2886 /* ContentView.swift */,
 				5C24C0672CFF839C009F2886 /* Assets.xcassets */,
-				5C24C06C2CFF839C009F2886 /* Persistence.swift */,
 				5C24C06E2CFF839C009F2886 /* TawuniyaTask.xcdatamodeld */,
 				5C24C0692CFF839C009F2886 /* Preview Content */,
 			);
@@ -113,15 +150,16 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		5C24C07A2CFF8868009F2886 /* Models */ = {
+		5C24C07A2CFF8868009F2886 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				5C24C0852CFF901B009F2886 /* User.swift */,
-				5C24C0872CFF904A009F2886 /* Address.swift */,
-				5C24C0892CFF906A009F2886 /* Geo.swift */,
-				5C24C08B2CFF9083009F2886 /* Company.swift */,
+				5C24C0922CFF9ACF009F2886 /* DataMappers */,
+				5C24C08D2CFF929D009F2886 /* DTO */,
+				5C24C0972CFFA34E009F2886 /* Repositories */,
+				5C24C0762CFF87FA009F2886 /* NetworkServices */,
+				5C24C09C2CFFACBA009F2886 /* Persistence */,
 			);
-			path = Models;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		5C24C07B2CFF886E009F2886 /* Enums */ = {
@@ -138,6 +176,129 @@
 				5C24C07F2CFF89CB009F2886 /* APIRouter.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		5C24C08D2CFF929D009F2886 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0852CFF901B009F2886 /* UserDTO.swift */,
+				5C24C0872CFF904A009F2886 /* AddressDTO.swift */,
+				5C24C0892CFF906A009F2886 /* GeoDTO.swift */,
+				5C24C08B2CFF9083009F2886 /* CompanyDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		5C24C08E2CFF92A9009F2886 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0B12CFFC395009F2886 /* UseCases */,
+				5C24C0B02CFFC38A009F2886 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5C24C0922CFF9ACF009F2886 /* DataMappers */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0932CFFA12B009F2886 /* ManagedObjectConvertible.swift */,
+				5C24C0952CFFA175009F2886 /* DomainConvertible.swift */,
+			);
+			path = DataMappers;
+			sourceTree = "<group>";
+		};
+		5C24C0972CFFA34E009F2886 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0982CFFA369009F2886 /* UserRepositories.swift */,
+				5C24C09A2CFFA512009F2886 /* UserRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		5C24C09C2CFFACBA009F2886 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0A92CFFB2A5009F2886 /* Errors */,
+				5C24C0A42CFFAF04009F2886 /* Extensions */,
+				5C24C09D2CFFACD6009F2886 /* ManageObjects */,
+				5C24C0A72CFFB260009F2886 /* CoreDataStack.swift */,
+				5C24C0AC2CFFB523009F2886 /* LocalDataService.swift */,
+				5C24C0AE2CFFB762009F2886 /* CoreDataService.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		5C24C09D2CFFACD6009F2886 /* ManageObjects */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0C32CFFD8FD009F2886 /* UserMO+CoreDataClass.swift */,
+				5C24C0C42CFFD8FD009F2886 /* UserMO+CoreDataProperties.swift */,
+			);
+			path = ManageObjects;
+			sourceTree = "<group>";
+		};
+		5C24C0A42CFFAF04009F2886 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0A52CFFAF18009F2886 /* NSManagedObjectContext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5C24C0A92CFFB2A5009F2886 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0AA2CFFB2B6009F2886 /* CoreDataErrors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		5C24C0B02CFFC38A009F2886 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0902CFF9A25009F2886 /* User.swift */,
+				5C24C0C72CFFE338009F2886 /* ViewState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C24C0B12CFFC395009F2886 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0B22CFFC3A7009F2886 /* GetAllUsersUseCase.swift */,
+				5C24C0B42CFFC833009F2886 /* SaveUserCase.swift */,
+				5C24C0B62CFFC88A009F2886 /* DeleteUserUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		5C24C0B82CFFC94D009F2886 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0BA2CFFC977009F2886 /* ViewModels */,
+				5C24C0B92CFFC970009F2886 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5C24C0B92CFFC970009F2886 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0BF2CFFCDA8009F2886 /* UserRowView.swift */,
+				5C24C0C12CFFCFD8009F2886 /* UsersListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5C24C0BA2CFFC977009F2886 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5C24C0BB2CFFC9CA009F2886 /* UsersListViewModel.swift */,
+				5C24C0BD2CFFCC0F009F2886 /* UserRowViewModel.swift */,
+				5C24C0C92CFFE4BA009F2886 /* RowViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,19 +371,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C24C0AB2CFFB2B6009F2886 /* CoreDataErrors.swift in Sources */,
 				5C24C0802CFF89CB009F2886 /* APIRouter.swift in Sources */,
+				5C24C0AD2CFFB523009F2886 /* LocalDataService.swift in Sources */,
 				5C24C0842CFF8BF6009F2886 /* URLSessionNetworkLayer.swift in Sources */,
-				5C24C0862CFF901B009F2886 /* User.swift in Sources */,
-				5C24C08A2CFF906A009F2886 /* Geo.swift in Sources */,
+				5C24C09B2CFFA512009F2886 /* UserRepositoryProtocol.swift in Sources */,
+				5C24C0C52CFFD8FD009F2886 /* UserMO+CoreDataClass.swift in Sources */,
+				5C24C0C62CFFD8FD009F2886 /* UserMO+CoreDataProperties.swift in Sources */,
+				5C24C0862CFF901B009F2886 /* UserDTO.swift in Sources */,
+				5C24C0BE2CFFCC0F009F2886 /* UserRowViewModel.swift in Sources */,
+				5C24C08A2CFF906A009F2886 /* GeoDTO.swift in Sources */,
+				5C24C0942CFFA12B009F2886 /* ManagedObjectConvertible.swift in Sources */,
+				5C24C0B32CFFC3A7009F2886 /* GetAllUsersUseCase.swift in Sources */,
+				5C24C0BC2CFFC9CA009F2886 /* UsersListViewModel.swift in Sources */,
 				5C24C0792CFF882C009F2886 /* RequestBuilder.swift in Sources */,
-				5C24C06D2CFF839C009F2886 /* Persistence.swift in Sources */,
+				5C24C0962CFFA175009F2886 /* DomainConvertible.swift in Sources */,
+				5C24C0912CFF9A25009F2886 /* User.swift in Sources */,
 				5C24C07D2CFF889F009F2886 /* HTTPMethod.swift in Sources */,
-				5C24C0662CFF839A009F2886 /* ContentView.swift in Sources */,
+				5C24C0CA2CFFE4BA009F2886 /* RowViewModel.swift in Sources */,
+				5C24C0C02CFFCDA8009F2886 /* UserRowView.swift in Sources */,
+				5C24C0C82CFFE338009F2886 /* ViewState.swift in Sources */,
+				5C24C0A62CFFAF18009F2886 /* NSManagedObjectContext.swift in Sources */,
+				5C24C0B72CFFC88A009F2886 /* DeleteUserUseCase.swift in Sources */,
 				5C24C0702CFF839C009F2886 /* TawuniyaTask.xcdatamodeld in Sources */,
-				5C24C0882CFF904A009F2886 /* Address.swift in Sources */,
+				5C24C0C22CFFCFD8009F2886 /* UsersListView.swift in Sources */,
+				5C24C0882CFF904A009F2886 /* AddressDTO.swift in Sources */,
+				5C24C0A82CFFB260009F2886 /* CoreDataStack.swift in Sources */,
 				5C24C0822CFF8B4C009F2886 /* NetworkServices.swift in Sources */,
-				5C24C08C2CFF9083009F2886 /* Company.swift in Sources */,
+				5C24C0B52CFFC833009F2886 /* SaveUserCase.swift in Sources */,
+				5C24C08C2CFF9083009F2886 /* CompanyDTO.swift in Sources */,
 				5C24C0642CFF839A009F2886 /* TawuniyaTaskApp.swift in Sources */,
+				5C24C0AF2CFFB762009F2886 /* CoreDataService.swift in Sources */,
+				5C24C0992CFFA369009F2886 /* UserRepositories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
