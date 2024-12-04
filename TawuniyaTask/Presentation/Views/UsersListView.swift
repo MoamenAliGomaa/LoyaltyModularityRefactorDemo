@@ -26,11 +26,13 @@ struct UsersListView: View {
                     .padding()
             case .success(let rowViewModels):
                 if let viewModels = rowViewModels as? [UserRowViewModel]{
-                    NavigationView(content: {
-                        List(viewModels) { rowViewModel in
-                            UserRowView(viewModel: rowViewModel)
-                        }
-                    }).navigationTitle("Users")
+                    ScrollView {
+                        VStack(spacing: 10) {
+                            ForEach(viewModels) { rowViewModel in
+                                UserRowView(viewModel: rowViewModel)
+                            }
+                        }.padding()
+                    }
                 }
             case .failed(let errorMessage):
                 Text(errorMessage)
