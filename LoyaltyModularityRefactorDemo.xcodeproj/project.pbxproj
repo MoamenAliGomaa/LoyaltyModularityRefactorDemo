@@ -39,9 +39,10 @@
 		5CCED2CB2D1DDC9F00094E37 /* CashedDomainResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCED2CA2D1DDC9F00094E37 /* CashedDomainResponse.swift */; };
 		5CCED2CD2D1E8DBB00094E37 /* CachingNetworkProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCED2CC2D1E8DBB00094E37 /* CachingNetworkProxy.swift */; };
 		5CCED2CF2D1E90CD00094E37 /* CasheEntityTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCED2CE2D1E90CD00094E37 /* CasheEntityTransformer.swift */; };
-		5CCED2D22D1ECA7500094E37 /* CashModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CCED2D02D1ECA7500094E37 /* CashModel.xcdatamodeld */; };
 		5CCED2D92D1EDD2800094E37 /* CacheEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCED2D72D1EDD2800094E37 /* CacheEntity+CoreDataClass.swift */; };
 		5CCED2DA2D1EDD2800094E37 /* CacheEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCED2D82D1EDD2800094E37 /* CacheEntity+CoreDataProperties.swift */; };
+		5CDA7A6C2D2035D900F9D097 /* CashModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA7A6A2D2035D900F9D097 /* CashModel.xcdatamodeld */; };
+		5CDA7A6F2D2035F800F9D097 /* PersistenceModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5CDA7A6E2D2035F800F9D097 /* PersistenceModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,9 +78,9 @@
 		5CCED2CA2D1DDC9F00094E37 /* CashedDomainResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedDomainResponse.swift; sourceTree = "<group>"; };
 		5CCED2CC2D1E8DBB00094E37 /* CachingNetworkProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingNetworkProxy.swift; sourceTree = "<group>"; };
 		5CCED2CE2D1E90CD00094E37 /* CasheEntityTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasheEntityTransformer.swift; sourceTree = "<group>"; };
-		5CCED2D12D1ECA7500094E37 /* CashModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CashModel.xcdatamodel; sourceTree = "<group>"; };
 		5CCED2D72D1EDD2800094E37 /* CacheEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CacheEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5CCED2D82D1EDD2800094E37 /* CacheEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CacheEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5CDA7A6B2D2035D900F9D097 /* CashModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CashModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDA7A6F2D2035F800F9D097 /* PersistenceModule in Frameworks */,
 				5CCED2C02D1DAC6100094E37 /* PersistenceModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,7 +121,6 @@
 				5C24C0632CFF839A009F2886 /* LoyaltyModularityRefactorDemo.swift */,
 				5C24C0672CFF839C009F2886 /* Assets.xcassets */,
 				5C24C0692CFF839C009F2886 /* Preview Content */,
-				5CCED2D02D1ECA7500094E37 /* CashModel.xcdatamodeld */,
 			);
 			path = LoyaltyModularityRefactorDemo;
 			sourceTree = "<group>";
@@ -279,6 +280,7 @@
 		5CCED2C12D1DAC8D00094E37 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5CDA7A6A2D2035D900F9D097 /* CashModel.xcdatamodeld */,
 				5CCED2D72D1EDD2800094E37 /* CacheEntity+CoreDataClass.swift */,
 				5CCED2D82D1EDD2800094E37 /* CacheEntity+CoreDataProperties.swift */,
 				5CCED2C22D1DACB000094E37 /* CashePolisy.swift */,
@@ -305,6 +307,7 @@
 			name = LoyaltyModularityRefactorDemo;
 			packageProductDependencies = (
 				5CCED2BF2D1DAC6100094E37 /* PersistenceModule */,
+				5CDA7A6E2D2035F800F9D097 /* PersistenceModule */,
 			);
 			productName = TawuniyaTask;
 			productReference = 5C24C0602CFF839A009F2886 /* LoyaltyModularityRefactorDemo.app */;
@@ -335,7 +338,7 @@
 			);
 			mainGroup = 5C24C0572CFF8399009F2886;
 			packageReferences = (
-				5CCED2BE2D1DAC6100094E37 /* XCLocalSwiftPackageReference "../../LoyaltySDK_Refactoring/PersistenceModule" */,
+				5CDA7A6D2D2035F800F9D097 /* XCLocalSwiftPackageReference "PersistenceModule" */,
 			);
 			productRefGroup = 5C24C0612CFF839A009F2886 /* Products */;
 			projectDirPath = "";
@@ -383,7 +386,6 @@
 				5C24C0792CFF882C009F2886 /* RequestBuilder.swift in Sources */,
 				5C24C0962CFFA175009F2886 /* DomainConvertible.swift in Sources */,
 				5C24C0912CFF9A25009F2886 /* User.swift in Sources */,
-				5CCED2D22D1ECA7500094E37 /* CashModel.xcdatamodeld in Sources */,
 				5C24C07D2CFF889F009F2886 /* HTTPMethod.swift in Sources */,
 				5C24C0CA2CFFE4BA009F2886 /* RowViewModel.swift in Sources */,
 				5C24C0C02CFFCDA8009F2886 /* UserRowView.swift in Sources */,
@@ -394,6 +396,7 @@
 				5C24C08C2CFF9083009F2886 /* CompanyDTO.swift in Sources */,
 				5CCED2CB2D1DDC9F00094E37 /* CashedDomainResponse.swift in Sources */,
 				5C24C0642CFF839A009F2886 /* LoyaltyModularityRefactorDemo.swift in Sources */,
+				5CDA7A6C2D2035D900F9D097 /* CashModel.xcdatamodeld in Sources */,
 				5C24C0992CFFA369009F2886 /* UserRepositories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,7 +530,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"/Users/moamen.ali/Documents/Tasks/TawuniyaTask/LoyaltyModularityRefactorDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"/Users/moamen.ali/Documents/Tasks/LoyaltyModularityRefactorDemo/LoyaltyModularityRefactorDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = G2TYZ2XXS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -556,7 +559,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"/Users/moamen.ali/Documents/Tasks/TawuniyaTask/LoyaltyModularityRefactorDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"/Users/moamen.ali/Documents/Tasks/LoyaltyModularityRefactorDemo/LoyaltyModularityRefactorDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = G2TYZ2XXS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -602,9 +605,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		5CCED2BE2D1DAC6100094E37 /* XCLocalSwiftPackageReference "../../LoyaltySDK_Refactoring/PersistenceModule" */ = {
+		5CDA7A6D2D2035F800F9D097 /* XCLocalSwiftPackageReference "PersistenceModule" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../LoyaltySDK_Refactoring/PersistenceModule;
+			relativePath = PersistenceModule;
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -613,17 +616,21 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = PersistenceModule;
 		};
+		5CDA7A6E2D2035F800F9D097 /* PersistenceModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PersistenceModule;
+		};
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		5CCED2D02D1ECA7500094E37 /* CashModel.xcdatamodeld */ = {
+		5CDA7A6A2D2035D900F9D097 /* CashModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5CCED2D12D1ECA7500094E37 /* CashModel.xcdatamodel */,
+				5CDA7A6B2D2035D900F9D097 /* CashModel.xcdatamodel */,
 			);
-			currentVersion = 5CCED2D12D1ECA7500094E37 /* CashModel.xcdatamodel */;
+			currentVersion = 5CDA7A6B2D2035D900F9D097 /* CashModel.xcdatamodel */;
 			name = CashModel.xcdatamodeld;
-			path = /Users/moamen.ali/Documents/Tasks/TawuniyaTask/LoyaltyModularityRefactorDemo/CashModel.xcdatamodeld;
+			path = /Users/moamen.ali/Documents/Tasks/LoyaltyModularityRefactorDemo/LoyaltyModularityRefactorDemo/CashModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
